@@ -10,7 +10,7 @@ An emergent rewrite is any chain $a \longleftrightarrow b$ of rewrites, where $a
 
 \begin{figure}[h]\centerline{\includegraphics[width=120mm]{jpg/sumassoc-em.jpg}}  \caption{ The ASSOC rewrite is emergent. The EM meta-rewrite is applied for the rewrite from the Figure \ref{sumassoc}} \label{sumassoc-em-fig} \end{figure}
 
-An example of an emergent rewrite is ASSOC, described in the Figure \ref{sumassoc-em-fig}. We use the Figure \ref{sumassoc} and we apply the EM meta-rewrite: for $e, x, y, z$ terms 
+An example of an emergent rewrite is ASSOC, described in the Figure \ref{sumassoc-em-fig}. We use the Figure \ref{sumassoc} and we apply the EM meta-rewrite: for $e, x, y, z$ terms which don't contain the node variable $a$ 
 $$ \displaystyle \left(La.\Sigma_{a}^{e}\left( \Sigma_{a}^{e}\left(x,y\right), z\right)\right) 0 \, \stackrel{EM}{\longleftrightarrow} \, \left(La.\Sigma_{a}^{e}\left( x, \Sigma_{a}^{a^{e} x} \left( y,z\right)\right)\right) 0 $$
 The limterm from the left hand side reduces, via LIM rewrites, as described in the left column of the Figure \ref{sumassoc-em-fig}: 
 $$ \displaystyle \left(La.\Sigma_{a}^{e}\left( \Sigma_{a}^{e}\left(x,y\right), z\right)\right) 0 \, \stackrel{LIM}{\longleftrightarrow} \, $$ 
@@ -26,7 +26,7 @@ In this case there were 9 LIM rewrites until we obtain a term, then we use the d
 
 We obtain the emergent rewrite: 
 $$\Sigma_{0}^{e}\left( \Sigma_{0}^{e}\left(x,y\right), z\right) \, \stackrel{ASSOC}{\longleftrightarrow} \, \Sigma_{0}^{e}\left( x , \Sigma_{0}^{e} \left( y, z\right)\right)   $$
-which expresses, in abstract syntactic tree (AST) form, the fact that for any term $e$ the operation $\displaystyle \Sigma_{0}^{e}(\cdot, \cdot)$ is associative. Mind that the operation itself is emergent: for any $e, x, y$ terms 
+which expresses, in abstract syntactic tree (AST) form, the fact that for any term $e$ the operation $\displaystyle \Sigma_{0}^{e}(\cdot, \cdot)$ is associative. Mind that the operation itself is emergent: for any $e, x, y$ terms which don't contain the node variable $a$ 
 $$(\left(La. \Sigma_{a}^{e}(x,y)\right) 0  \, \stackrel{LIM}{\longleftrightarrow} \, \Sigma_{0}^{(La.e) 0} \left((La.x) 0 , (La.y) 0) \right)  \, \stackrel{LIM}{\longleftrightarrow} \, \Sigma_{0}^{e}(x,y)$$
 Therefore, we are able to obtain emergent algebraic structures (operations) and properties of those (like associativity here) from the LIM rewrites of limterms, on one side, and from the use of the EM meta-rewrite with term rewrites, on the other side. 
 
