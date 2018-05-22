@@ -1,0 +1,85 @@
+\section{Conical groups}
+
+
+An algebraic conical group $\displaystyle (G, \oplus, \ominus, e, Y, \bar{\cdot}, 1, m)$ is: 
+\begin{enumerate}
+\item[-] a group $G$  with the operation $(x,y) \mapsto x \oplus y$  inverse $x \mapsto \ominus x$ and difference operation $\displaystyle (x,y) \mapsto \ominus x \oplus y \, = \, \left( \ominus x \right) \oplus y$ and neutral element $e$. The axioms are: for any $x, y, z \in G$ 
+\begin{equation}
+\begin{array}{rclr}
+\left(x \oplus y \right) \oplus z & = & x \oplus \left( y \oplus z \right) & \mbox{(associativity)} \\ 
+ e \oplus x  & = & x  & \mbox{(left-neutral element)} \\ 
+ x \oplus e  & = & x  &  \mbox{(right-neutral element)} \\
+\ominus \left( \ominus x \right) & = & x  & \mbox{(idempotent-inv)} \\
+ \left(\ominus x\right) \oplus x  & = & e  & \mbox{(left-inverse)} \\
+ x \oplus \left(\ominus x \right)  & = & e  & \mbox{(right-inverse)}
+\end{array}
+\label{gpluseqs}
+\end{equation}
+\item[-] a commutative group $Y$ with operation $(a,b) \mapsto ab$, inverse $\displaystyle a \mapsto \bar{a}$ and neutral element $1$. The axioms are: for any $a, b, c \in Y$
+\begin{equation}
+\begin{array}{rclr}
+\left(a b \right) c & = & a \left( b c \right) & \mbox{($Y$-associativity)} \\ 
+ 1 a  & = & a  & \mbox{($Y$-left-neutral element)} \\ 
+ a 1  & = & a  & \mbox{($Y$-right-neutral element)} \\ 
+ \bar{\bar{a}} & = & a  & \mbox{($Y$-idempotent-inv)} \\ 
+ \bar{a} a  & = & 1  & \mbox{($Y$-left-inverse)} \\ 
+ a \bar{a}  & = & 1  & \mbox{($Y$-right-inverse)} \\ 
+ a b  & = & b a  & \mbox{($Y$-commutative)}
+\end{array}
+\label{ycomm}
+\end{equation}
+\item[-] a multiplication operation $\displaystyle (a,x) \in Y \times G \mapsto m(a,x) = ax \in G$, which satisfies the axioms: for any $a, b \in Y$ and for any $x, y \in G$ 
+\begin{equation}
+\begin{array}{rclr}
+a\left(b x \right) & = & \left( a b \right) x & \mbox{(left-action)} \\ 
+1 x  & = &  x & \mbox{(left-action-neutral)} \\ 
+a\left(x \oplus y \right) & = &  \left(a x\right) \oplus \left(a y\right) & \mbox{(distributive)} \\ 
+a e & = & e & \mbox{(fixed-point)}
+\end{array}
+\label{multax}
+\end{equation}
+\end{enumerate}
+
+\begin{definition}
+A topological conical group is an algebraic conical group, where $G$ and $Y$ are topological groups, all operations are continuous, such that: 
+\begin{enumerate}
+\item[-] $Y$ has an absolute $0$, i.e. we can add an element $0$ to $Y$ and we can extend by continuity the operation on $Y$ by 
+\begin{equation}
+a 0 \, = 0 a \, = \, 0
+\label{yabsolute}
+\end{equation}
+in the sense that for any $b \in Y$ we have $\displaystyle \lim_{a \rightarrow 0} ab = 0$. 
+\item[-] we can extend by continuity the multiplication of elements in $G$ with the absolute $0$ by: 
+\begin{equation}
+m(0,x) \, = \, 0 x \, = \, e
+\label{g0x}
+\end{equation}
+where the element $e$ from the right hand side of (\ref{g0x}) is the neutral element of $G$, in the sense that 
+ for any $x \in G$ we have $\displaystyle \lim_{a \rightarrow 0} m(a,x) \, = \, e$.
+\end{enumerate}
+\end{definition}
+
+An algebraic conical group is different from a vector space or even from a left module. Indeed: 
+\begin{enumerate}
+\item[-] we think about the elements of $Y$ as scalars, but $Y$ is not a ring, it is only a commutative group. There is no addition of scalars.
+\item[-] we think about the elements of $G$ as vectors, but the addition of vectors is not commutative. 
+\item[-] because there is no addition of scalars, there is no distributivity of scalar multiplication with respect to scalars addition.
+\end{enumerate}
+However, trivially if $Y$ is a field and if $G$ is a $Y$-vector space, then we obtain an algebraic conical group which is commutative and such that the distributivity of scalar multiplication with respect to scalars addition is satisfied. 
+
+There are many other examples of conical groups. 
+
+\begin{definition}
+Let $G$ be a group with neutral element e,  endowed with a group automorphism $\phi: G \rightarrow G$. Let $\displaystyle Y = (\mathbb{Z}, + , 0)$. Define the multiplication 
+$$ m(a,x) \, = \, \phi^{a}(x) $$
+where $\displaystyle \phi^{a} \, = \, \phi \circ ... \circ \phi$ $a$ times if $a >0$, $\displaystyle \phi^{0} \, = \, id_{G}$ and  $\displaystyle \phi^{a} \, = \, \phi^{-1} \circ ... \circ \phi^{-1}$  $-a$ times if $a < 0$. We get a structure of an algebraic conical group. 
+
+If moreover the group $G$ is a topological group, the automorphism $\phi$ is continuous, with continuous inverse and for any $x \in G$ we have $\displaystyle \lim_{n \rightarrow \infty} m(n,x) \, = \, e$ then we obtain the definition of a contractible group \cite{siebert}.
+
+\end{definition}
+
+Contractible groups are therefore topological conical groups, with $\displaystyle Y = (\mathbb{Z}, + )$ and with absolute $\infty$. 
+
+A topological real vector space is a topological conical group, with $\displaystyle Y = \mathbb{R}^{*}$ and with absolute $0 \in \mathbb{R}$. However remark that we still don't use the additions of real scalars. 
+
+Carnot groups are the inspiration for topological conical groups. 
