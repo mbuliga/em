@@ -1,0 +1,37 @@
+\section{Idempotent right quasigroups}
+
+The connection between these rewrites and the true Reidemeister moves from knot theory is the following. Knot diagrams are ribbon graphs (oriented or not) made of two kinds of 4 valent nodes, which are also planar graphs (a condition which is irrelevant for this exposition) and the Reidemeister moves are indeed graph rewrites which apply on this class of graphs (planar or not). Knot diagrams (edges) can be decorated by elements from an algebraic structure called "quandle", in such a way that the Reidemeister rewrites (from knot theory) preserve the decoration. A quandle is a self-distributive idempotent right quasigroup and the correspondence between the Reidemeister rewrites (from knot theory) and the axioms of a quandle is the following: "self-distributive" = R3, "idempotent" = R1, "right quasigroup" = R2. For the convenience of the reader we give here the definition of an idempotent right quasigroup. 
+
+\begin{definition}
+An idempotent right quasigroup (irq) $\displaystyle (X, \circ, \bullet)$ is a set $X$ with two binary operations which satisfy the axioms: 
+\begin{enumerate}
+\item[-] (R1) for any $x \in X$ \, $\displaystyle x \circ x \, = x \bullet x \, = \, x$
+\item[-] (R2) for any $e, x \in X$ \, $\displaystyle e \bullet ( e \circ x) \, = \, e \circ (e \bullet x) \, = \, x$
+\end{enumerate}
+\label{irq}
+\end{definition}
+
+A simple example of an irq is given by $\displaystyle (X, \circ_{a}, \bullet_{a})$, 
+$$\displaystyle x \circ y \, = \, (1-a)x + ay \, , \, x \bullet y \, = \, (1-a^{-1})x + a^{-1}y $$
+where $x, y \in X$, a real vector space and $a \in (0, + \infty)$ is a fixed parameter. (This example is actually a quandle, meaning that it satisfies also a third axiom R3 of self-distributivity). The calculations made at the beginning of Section \ref{spatmat} were done in this particular irq. 
+
+If we consider instead a family of irqs indexed with a parameter $a \in Y$ then we arrive to the notion of a $Y$-irq, Definition 4.2 \cite{buligabraided}, or Definition 5.1 \cite{buligaglc}. In Definition 3.3. \cite{buligairq} we started from one irq and defined a $\mathbb{Z} \setminus \left\{ 0 \right\}$ -irq. 
+
+\begin{definition}
+Let $Y$ be a commutative group, with the operation denoted multiplicatively and the neutral element denoted by $1$. A $Y$-irq is a family of irqs $\displaystyle (X, \circ_{a}, \bullet_{a})$, for any $a \in Y$, with the properties: 
+\begin{enumerate}
+\item[-] (a) for any $x,y \in X$ \, $\displaystyle x \circ_{1} y \, = \, x \bullet_{1} y \, = \, y$
+\item[-] (b) for any $a \in Y, \, x, y \in X$ \, $\displaystyle x \circ_{a^{-1}} y \, = \, x \bullet_{a} y$
+\item[-] (c) for any $a, b \in Y, x, y \in X$ \, $x \circ_{a} ( x \circ_{b} y) \, = \, x \circ_{ab} y$.   
+\end{enumerate}
+\label{yirq}
+\end{definition}
+
+This definition has many points in common with parts of Definitions \ref{defterms}, \ref{ddifprod}, \ref{r1} and \ref{r2}. Here $X$ plays the role of the set of terms,  $\displaystyle \left\{ a, \, \bar{a} \mbox{ : } a \in \Upsilon\right\}$ plays the role of the group $Y$, $\displaystyle \longleftrightarrow$ plays the role of "$=$". If we replace "$\displaystyle a^{e} x$" by "$\displaystyle e \circ_{a} x$", and "$\displaystyle \bar{a}^{e} x$" by "$\displaystyle e \bullet_{a} x$" then: 
+\begin{enumerate}
+\item[-] Definition \ref{yirq} (a) corresponds to Definition \ref{ddifprod}, the part about $\displaystyle 1$ and $\displaystyle \bar{1}$, 
+\item[-] Definition \ref{yirq} (b) corresponds to the choice of graphical notation for the terms $\displaystyle a^{e} x$ and $\displaystyle \bar{a}^{e} x$, 
+\item[-] Definition \ref{yirq} (b) corresponds to Definition \ref{ddifprod} of multiplication of two binary terms.  
+\item[-] $\displaystyle (X, \circ_{a}, \bullet_{a})$ is an irq corresponds to Definitions \ref{r1}, \ref{r2}.
+\end{enumerate}
+There is no commutative group structure though, which corresponds to the fact that equations like (\ref{abba}), (\ref{abbara}) (\ref{barabbara}) do not hold. That is why we introduce the commutativity rewrites.
