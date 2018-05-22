@@ -1,0 +1,173 @@
+\documentclass{article}
+
+
+
+%\usepackage{amssymb,latexsym,amsmath}
+\usepackage{amssymb,latexsym}
+%\usepackage{makeidx} 
+%\makeindex
+
+%\usepackage[dvips,matrix,arrow,ps,color,line,curve,frame]{xy}
+
+%\usepackage{graphicx}
+
+\usepackage[pdftex]{graphicx}
+
+%\usepackage{parsetree}
+\usepackage{hyperref}
+
+
+
+\hoffset-0.64cm
+\voffset-2.14cm
+
+
+\textheight23.8cm
+
+\setlength{\textwidth}{14.cm}
+
+
+
+\begin{document}
+
+
+\pagestyle{plain}
+
+
+
+
+
+
+
+
+
+
+\newtheorem{theorem}{Theorem}[section]
+
+\newtheorem{proposition}[theorem]{Proposition}
+
+\newtheorem{lema}[theorem]{Lemma}
+
+\newtheorem{corollary}[theorem]{Corollary}
+
+\newtheorem{definition}[theorem]{Definition}
+
+\newtheorem{remark}[theorem]{Remark}
+
+\newtheorem{exempl}{Example}[section]
+
+\newenvironment{example}{\begin{exempl}  \em}{\hfill $\square$
+
+\end{exempl}}  \vspace{.5cm}
+
+
+
+
+
+
+
+
+
+\renewcommand{\contentsname}{ }
+
+
+
+
+\title{The EM rewrite system}
+
+\author{Marius Buliga \\ 
+\\
+Institute of Mathematics, Romanian Academy \\
+P.O. BOX 1-764, RO 014700\\
+Bucure\c sti, Romania\\
+{\footnotesize Marius.Buliga@imar.ro}}  \vspace{.5cm}
+
+
+
+
+
+
+
+\date{This version: \today}
+
+
+
+
+
+
+\maketitle
+
+
+\begin{abstract}
+We study emergent algebras as a term rewrite system. 
+
+\end{abstract}
+
+
+%\tableofcontents
+
+
+%\newpage
+
+\include{tex/finite_terms}
+
+\include{tex/patt_match}
+ 
+\include{tex/r1_r2}
+
+\include{tex/irq}
+
+\include{tex/comm}
+
+\include{tex/binary}
+
+\include{tex/approx_op}
+
+\include{tex/limterms}
+
+\include{tex/em_meta}
+
+%\include{tex/tangles}
+
+
+\begin{thebibliography}{99}
+
+
+\bibitem{buligaglc} M. Buliga, Graphic lambda calculus. {\it Complex Systems} {\bf 22}, 4 (2013), 311-360. \\ 
+\href{https://arxiv.org/abs/1305.5786}{arXiv:1305.5786}
+
+\bibitem{buligairq} M. Buliga, Emergent algebras, \href{https://arxiv.org/abs/0907.1520}{arXiv:0907.1520}
+
+\bibitem{buligadil1} M. Buliga, Dilatation structures I. Fundamentals, {\it 
+J. Gen. Lie Theory Appl.},  {\bf 1} (2007),  2, 65-95. \\ 
+\href{https://arxiv.org/abs/math/0608536}{arXiv:math/0608536}
+
+
+\bibitem{buligainf} M, Buliga, Infinitesimal affine geometry of metric spaces endowed with a dilatation structure, {\it Houston Journal of Mathematics}, {\bf 36}, 1 (2010), 91-136. \\ 
+\href{https://arxiv.org/abs/0804.0135}{arXiv:math/0608536}
+
+
+\bibitem{buligabraided} M. Buliga, Braided spaces with dilations and sub-riemannian symmetric spaces, in: Geometry. Exploratory Workshop on Differential Geometry and its Applications, eds. D. Andrica, S. Moroianu, Cluj-Napoca 2011, 21-35. \\   
+\href{https://arxiv.org/abs/1005.5031}{arXiv:0804.0135}
+
+
+\bibitem{buligachora} M. Buliga, Computing with space: a tangle formalism for chora and difference, \href{https://arxiv.org/abs/1103.6007}{arXiv:1103.6007}
+
+
+
+
+%\bibitem{polyak} M. Polyak,  Minimal generating sets of Reidemeister moves,  \href{http://arxiv.org/abs/0908.3127}{arXiv:0908.3127}
+
+%\bibitem{lodayr} J.-L. Loday, M.O. Ronco, Hopf Algebra of the  planar  Binary Trees, {\it Advances in Math.}, {\bf 139} (1998), 293-309
+
+\bibitem{graphiclambdaknots} M. Buliga, Graphic lambda calculus and knot diagrams, \href{http://arxiv.org/abs/1211.1604}{arXiv:1211.1604}
+
+
+\bibitem{graphiclambdamoves} M. Buliga, Local and global moves on locally planar trivalent graphs, lambda calculus and lambda-Scale, \href{http://arxiv.org/abs/1207.0332}{arXiv:1207.0332} 
+
+\bibitem{lambdascale} M. Buliga, Lambda-Scale, a lambda calculus for spaces with dilations,  \href{http://arxiv.org/abs/1205.0139}{arXiv:1205.0139}
+\end{thebibliography}
+
+
+\end{document}
+
