@@ -1,6 +1,6 @@
-[The latest version of the draft](http://imar.ro/~mbuliga/short.pdf) has been released as em-convex [arXiv:1807.02058](https://arxiv.org/abs/1807.02058). 
+First part: em-convex [arXiv:1807.02058](https://arxiv.org/abs/1807.02058). 
 
-This will not be continued here, for the moment. Some of the files have been used in the first release. 
+This will not be continued here, for the moment. Some of the files have been used in the first part. 
 _____________________________________________________________________
 
 This repository contains work for the EM (emergent algebras) term rewrite system. It will have several parts, (first part is em-convex) and it will be built progresively, from a lambda calculus style formalism to a machine for computing space (and physics). 
